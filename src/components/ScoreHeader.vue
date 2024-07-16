@@ -1,6 +1,6 @@
 <template>
   <header id="score-header">
-    <SpacerTemplate />
+    <div></div>
     <div id="score-section">
       <div
         v-for="team in teamScore.teams"
@@ -47,7 +47,6 @@ function setActiveTeam(team) {
   #score-section {
     display: flex;
     gap: 20px;
-    width: 100%;
     justify-content: center;
     .team {
       padding: 0px 20px;
@@ -68,7 +67,6 @@ function setActiveTeam(team) {
     }
   }
   .menu-icon {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
